@@ -1,0 +1,23 @@
+services:
+  angular-app:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - "4200:4200"
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ./src:/app/src
+      - /app/node_modules
+    command: ng serve --host 0.0.0.0 --poll 2000
+
+  # angular-app-prod:
+  #   build:
+  #     context: .
+  #     dockerfile: docker/Dockerfile
+  #   ports:
+  #     - "4201:80"
+  #   environment:
+  #     - NODE_ENV=production
+  #   command: npm run build --prod && npm install -g serve && serve -s dist/angular-project
