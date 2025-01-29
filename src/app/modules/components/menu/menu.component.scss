@@ -1,0 +1,21 @@
+
+ ion-title {
+    font-size: 18px;
+  }
+  
+  .theme-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .icon-dash {
+    width: 27px;
+    height: 27px;
+  }
+  
+  ion-toggle {
+    --handle-background: var(--ion-color-primary); /* Cor do botão */
+  }
+
+  

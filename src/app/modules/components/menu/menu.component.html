@@ -1,0 +1,40 @@
+<!--  -->
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button auto-hide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Programa para Identificação de moscas</ion-title>
+    <ion-buttons slot="end">
+      <div class="theme-toggle">
+        <ion-icon
+          [name]="isDarkMode ? 'moon' : 'sunny'"
+          slot="icon-only"
+          class="icon-dash"
+        ></ion-icon>
+        <ion-toggle
+          [checked]="isDarkMode"
+          (ionChange)="toggleTheme($event)"
+        ></ion-toggle>
+      </div>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+  <ion-menu contentId="main-content"  slot="start">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Sidebar</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item>Item 1</ion-item>
+        <ion-item>Item 2</ion-item>
+        <ion-item>Item 3</ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+

@@ -34,4 +34,26 @@
 
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
-@import "@ionic/angular/css/palettes/dark.system.css";
+//@import "@ionic/angular/css/palettes/dark.system.css";
+body,
+html,
+ion-app {
+  background-color: var(--ion-background-color);
+  color: var(--ion-text-color);
+}
+
+.dark body,
+.dark html,
+.dark ion-app {
+  background-color: var(--ion-background-color);
+  color: var(--ion-text-color);
+}
+
+ion-toolbar {
+  background-color: var(--ion-toolbar-background);
+  color: var(--ion-toolbar-color);
+}
+body, ion-app {
+  height: 100%;
+}
+

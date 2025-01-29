@@ -1,0 +1,21 @@
+<ion-content class="table">
+  <ion-grid class="table-content">
+    <ion-row class="table-title table-row">
+      <ion-col size="2">Id</ion-col>
+      <ion-col size="2">Nome</ion-col>
+      <ion-col size="6">Descrição</ion-col>
+      <ion-col size="2">Opções</ion-col>
+    </ion-row>
+    @for(gen of generosDeMoscas; track gen.id){
+    <ion-row class="table-row">
+      <ion-col class="table-text-center" size="2">{{gen.id}}</ion-col>
+      <ion-col class="table-text-center" size="2">{{gen.Nome}}</ion-col>
+      <ion-col class="table-text" size="6">{{gen.Descricao}}</ion-col>
+      <ion-col class="table-text-center" size="2"
+        ><ion-button fill="outline" size="small" color="success">Alterar</ion-button
+        ><ion-button size="small" color="danger">Excluir</ion-button></ion-col
+      >
+    </ion-row>
+    }
+  </ion-grid>
+</ion-content>

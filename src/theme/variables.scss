@@ -1,2 +1,32 @@
 // For information on how to create your own theme, please see:
 // http://ionicframework.com/docs/theming/
+/* Light Theme (default) */
+:root {
+  --ion-background-color: #f8f9fa; /* Light grayish-blue */
+  --ion-text-color: #000000; /* Black text */
+  --ion-toolbar-background: #e3eaf5; /* Light blue-gray for toolbar */
+  --ion-toolbar-color: #0d6efd; /* Bootstrap primary blue */
+  --ion-card-background: #ffffff; /* White for cards */
+  --ion-card-color: #000000; /* Black text on cards */
+
+}
+
+/* Dark Theme */
+.dark {
+  --ion-background-color: #0d1117; /* Slightly lighter dark blue */
+  --ion-text-color: #ffffff; /* White text */
+  --ion-toolbar-background: #2a3b4d; /* Blue-gray for toolbar */
+  --ion-toolbar-color: #ffffff; /* Lighter blue for toolbar text */
+  --ion-card-background: #2a3b4d; /* Blue-gray for cards */
+  --ion-card-color: #ffffff; /* White text on cards */
+}
+
+.light {
+  --ion-background-color: #f8f9fa; /* Light grayish-blue */
+  --ion-text-color: #000000; /* Black text */
+  --ion-toolbar-background: #e3eaf5; /* Light blue-gray for toolbar */
+  --ion-toolbar-color: #0d6efd; /* Bootstrap primary blue */
+  --ion-card-background: #ffffff; /* White for cards */
+  --ion-card-color: #000000; 
+}
+  

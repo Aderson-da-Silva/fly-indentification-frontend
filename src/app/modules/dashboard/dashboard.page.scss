@@ -1,0 +1,31 @@
+.table-content {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 50px;
+  border: solid 0.5px gray;
+  border-radius: 10px;
+}
+.table-title {
+  ion-col {
+    text-align: center;
+    font-weight: bolder;
+  }
+}
+.table-row {
+  border-bottom: solid 0.5px gray;
+  &:last-child {
+    border-bottom: none;
+  }
+  ion-col {
+    border-right: solid 0.5px gray;
+    &:last-child {
+      border-right: none;
+    }
+  }
+}
+.table-text-center {
+  text-align: center;
+}
+.table-text {
+  text-align: justify;
+}
